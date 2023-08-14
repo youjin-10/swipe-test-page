@@ -22,8 +22,9 @@ const Index = ({
     >
       <section>this is index (/second)</section>
       <section>{branches[0].name}</section>
-      <section>
+      <section className="flex flex-col space-y-2">
         <button
+          className="p-2 rounded border border-blue-400 text-blue-400"
           onClick={() => {
             router.push("/");
           }}
@@ -32,6 +33,7 @@ const Index = ({
         </button>
 
         <button
+          className="p-2 rounded border border-black"
           onClick={() => {
             router.push("/first");
           }}

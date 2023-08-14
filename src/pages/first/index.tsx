@@ -18,8 +18,9 @@ const Index = ({
     >
       <section>this is index (/first)</section>
       <section>{repo.stargazers_count}</section>
-      <section>
+      <section className="flex flex-col space-y-2">
         <button
+          className="p-2 rounded border border-blue-400 text-blue-400"
           onClick={() => {
             router.push("/");
           }}
@@ -28,6 +29,7 @@ const Index = ({
         </button>
 
         <button
+          className="p-2 rounded border border-purple-400 text-purple-400"
           onClick={() => {
             router.push("/second");
           }}

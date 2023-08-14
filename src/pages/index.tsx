@@ -12,8 +12,9 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
       <section>this is index (/)</section>
-      <section>
+      <section className="flex flex-col space-y-2">
         <button
+          className="p-2 rounded border border-black"
           onClick={() => {
             router.push("/first");
           }}
@@ -22,6 +23,7 @@ export default function Home() {
         </button>
 
         <button
+          className="p-2 rounded border border-purple-400 text-purple-400"
           onClick={() => {
             router.push("/second");
           }}
