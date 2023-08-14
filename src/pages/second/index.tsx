@@ -11,7 +11,9 @@ export const getServerSideProps: GetServerSideProps = async () => {
   return { props: { branches } };
 };
 
-const Index = ({ branches }) => {
+const Index = ({
+  branches,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 $`}
